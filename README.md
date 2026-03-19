@@ -78,7 +78,7 @@ This project demonstrates how web technologies can deliver smooth, interactive g
 
 ## Gameplay Preview
 
-![Gameplay in Action](gameplay.mp4)
+![Gameplay in Action](gameplay.gif)
 
 ---
 
@@ -116,63 +116,4 @@ Try the game online: [Slice Frenzy Live](https://riiyansh-singh.github.io/slice-
 
 ---
 
-**Enjoy slicing fruits and beware of Kallu Kalia! 🍉💀**- Background music
-
-This helps in:
-- Faster development
-- No local setup needed
-- Easy GitHub deployment
-
----
-
-## ⚠️ Note on Offline Assets
-
-I attempted to move assets locally (inside an `/assets` folder) to make the game work offline, but faced some issues such as:
-
-- ❌ Images not loading due to incorrect relative paths  
-- ❌ Sounds not playing (browser restrictions / file path issues)  
-- ❌ Some assets causing delayed rendering or not appearing at all  
-- ❌ Inconsistent behavior between mobile and desktop  
-
-Because of this, the current version uses online resources for stability.
-
-👉 In future updates, I plan to:
-- Properly structure local assets
-- Optimize loading
-- Make the game fully offline compatible
-
----
-
-## 🕹 Controls
-- Mobile: Swipe on screen  
-- Desktop: Move mouse  
-
----
-
-## 🛠 Tech Stack
-- HTML5  
-- CSS3  
-- JavaScript (Canvas API)  
-
----
-
-## 🌐 Live Demo
-(Add your GitHub Pages link here)
-
----
-
-## 📌 Future Improvements
-- 🏆 Online leaderboard  
-- 🎯 Levels system  
-- 🍉 Realistic fruit slicing animation  
-- 📦 Offline asset support  
-- 📱 APK version  
-
----
-
-## 👨‍💻 Author
-Riyansh Singh
-
----
-
-⭐ If you like this project, consider giving it a star!
+**Enjoy slicing fruits and beware of Kallu Kalia! 🍉💀**
