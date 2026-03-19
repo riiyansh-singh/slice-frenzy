@@ -3,13 +3,6 @@ body {
   overflow: hidden;
   font-family: Arial, sans-serif;
   text-align: center;
-  background: linear-gradient(to bottom, #f5f7fa, #c3cfe2);
-  color: #222;
-  transition: background 0.3s, color 0.3s;
-}
-
-/* Dark mode */
-body.dark {
   background: radial-gradient(circle, #000, #020202);
   color: #fff;
 }
@@ -25,25 +18,16 @@ body.dark {
 .start-screen h1 {
   font-size: 60px;
   font-weight: bold;
-  color: #ff3c00;
-  text-shadow: 0 0 5px #ff3c00, 0 0 10px #ff3c00, 0 0 20px #ff3c00;
-  margin-bottom: 10px;
-}
-
-body.dark .start-screen h1 {
-  color: #0ff;
+  color: #0ff; /* neon cyan */
   text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+  margin-bottom: 10px;
 }
 
 .start-screen p {
   font-size: 22px;
-  color: #444;
-  margin-bottom: 20px;
-}
-
-body.dark .start-screen p {
   color: #ccc;
   text-shadow: 0 0 3px #0ff;
+  margin-bottom: 20px;
 }
 
 /* Buttons & inputs */
@@ -60,12 +44,6 @@ body.dark .start-screen p {
 }
 
 .start-screen button {
-  background: #ff3c00;
-  color: white;
-  box-shadow: 0 0 15px #ff3c00;
-}
-
-body.dark .start-screen button {
   background: #0ff;
   color: #000;
   box-shadow: 0 0 15px #0ff;
