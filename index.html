@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Slice Frenzy - Kallu Kalia Edition</title>
+  <title>Slice Frenzy - Kallu Kalia Edition 💀</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="dark">
 
-<div id="startScreen">
+<div id="startScreen" class="start-screen">
   <h1>🍉 Slice Frenzy</h1>
+  <p>Slice the fruits before they fall! Avoid bombs 💣</p>
   <input id="playerName" placeholder="Enter your name" />
   <br><br>
   <select id="difficulty">
+    <option value="toddler">Toddler 😇</option>
     <option value="easy">Easy 😌</option>
     <option value="normal">Normal 😐</option>
-    <option value="hard">Angry 😈</option>
+    <option value="hard">Hard 😈</option>
     <option value="god">GOD 💀</option>
   </select>
   <br><br>
   <button onclick="startGame('solo')">Solo Mode</button>
   <button onclick="startGame('bot')">VS Kallu Kalia 💀</button>
+  <br><br>
+  <button onclick="toggleTheme()">🌙 Light / Dark Mode</button>
 </div>
 
 <div id="gameUI" style="display:none;">
@@ -35,7 +39,6 @@
 
 <audio id="sliceSound" src="https://www.soundjay.com/button/sounds/button-16.mp3"></audio>
 <audio id="bombSound" src="https://www.soundjay.com/button/sounds/button-10.mp3"></audio>
-<audio id="bgMusic" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" loop></audio>
 
 <script src="script.js"></script>
 </body>
