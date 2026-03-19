@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Slice Frenzy</title>
+  <title>Slice Frenzy - Kallu Kalia Edition</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="dark">
 
 <div id="startScreen">
   <h1>🍉 Slice Frenzy</h1>
-  <p id="highScore">High Score: 0</p>
-  <button onclick="startGame()">Start</button>
+  <input id="playerName" placeholder="Enter your name" />
+  <br><br>
+  <select id="difficulty">
+    <option value="easy">Easy 😌</option>
+    <option value="normal">Normal 😐</option>
+    <option value="hard">Angry 😈</option>
+    <option value="god">GOD 💀</option>
+  </select>
+  <br><br>
+  <button onclick="startGame('solo')">Solo Mode</button>
+  <button onclick="startGame('bot')">VS Kallu Kalia 💀</button>
 </div>
 
 <div id="gameUI" style="display:none;">
