@@ -78,7 +78,7 @@ This project demonstrates how web technologies can deliver smooth, interactive g
 
 ## Gameplay Preview
 
-![Gameplay in Action](gameplay.gif)
+![Gameplay in Action](gameplay.mp4)
 
 ---
 
