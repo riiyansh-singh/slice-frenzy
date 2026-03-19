@@ -10,6 +10,11 @@ body.dark {
   background: radial-gradient(circle, #000, #020202);
 }
 
+body.light {
+  background: radial-gradient(circle, #fff, #eee);
+  color: black;
+}
+
 canvas {
   display: block;
 }
@@ -21,12 +26,13 @@ button {
   border: none;
   background: cyan;
   box-shadow: 0 0 20px cyan;
+  cursor: pointer;
 }
 
 input, select {
   padding: 10px;
   border-radius: 10px;
-  border: none;
+  border: 1px solid #ccc;
   text-align: center;
 }
 
@@ -40,8 +46,18 @@ input, select {
   top: 40px;
 }
 
-#startScreen, #gameOver {
+.start-screen, #gameOver {
   position: absolute;
   width: 100%;
-  top: 30%;
+  top: 20%;
+}
+
+.start-screen h1 {
+  font-size: 48px;
+  color: cyan;
+  text-shadow: 0 0 10px cyan;
+}
+
+.start-screen p {
+  font-size: 20px;
 }
