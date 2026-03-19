@@ -1,41 +1,63 @@
 body {
   margin: 0;
   overflow: hidden;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   text-align: center;
-  color: white;
+  background: linear-gradient(to bottom, #f5f7fa, #c3cfe2);
+  color: #222;
 }
 
-body.dark {
-  background: radial-gradient(circle, #000, #020202);
+/* Start screen */
+.start-screen {
+  position: absolute;
+  width: 100%;
+  top: 15%;
+  text-align: center;
 }
 
-body.light {
-  background: radial-gradient(circle, #fff, #eee);
-  color: black;
+.start-screen h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: #ff3c00;
+  text-shadow: 0 0 5px #ff3c00, 0 0 10px #ff3c00, 0 0 20px #ff3c00;
+  margin-bottom: 10px;
 }
 
-canvas {
-  display: block;
+.start-screen p {
+  font-size: 22px;
+  color: #444;
+  margin-bottom: 20px;
 }
 
-button {
-  padding: 12px 22px;
+.start-screen input,
+.start-screen select,
+.start-screen button {
+  margin-top: 10px;
   font-size: 18px;
   border-radius: 12px;
+  padding: 10px 20px;
   border: none;
-  background: cyan;
-  box-shadow: 0 0 20px cyan;
   cursor: pointer;
 }
 
-input, select {
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  text-align: center;
+.start-screen button {
+  background: #ff3c00;
+  color: white;
+  box-shadow: 0 0 15px #ff3c00;
 }
 
+.start-screen button:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+/* Canvas */
+canvas {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Score & Lives */
 #score, #lives {
   position: absolute;
   left: 10px;
@@ -44,20 +66,4 @@ input, select {
 
 #lives {
   top: 40px;
-}
-
-.start-screen, #gameOver {
-  position: absolute;
-  width: 100%;
-  top: 20%;
-}
-
-.start-screen h1 {
-  font-size: 48px;
-  color: cyan;
-  text-shadow: 0 0 10px cyan;
-}
-
-.start-screen p {
-  font-size: 20px;
 }
