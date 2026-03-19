@@ -24,9 +24,6 @@ const fruitImages=[
 const bombImg=new Image();
 bombImg.src="https://cdn-icons-png.flaticon.com/512/484/484167.png";
 
-// Theme toggle
-function toggleTheme(){ document.body.classList.toggle("dark"); }
-
 // Start / Restart
 function startGame(selectedMode){
   playerName=document.getElementById("playerName").value||"Player";
@@ -87,12 +84,12 @@ function draw(){
   });
 
   // Particles
-  particles.forEach((p,i)=>{p.x+=p.dx; p.y+=p.dy; p.life--; ctx.fillStyle="orange"; ctx.fillRect(p.x,p.y,4,4); if(p.life<=0) particles.splice(i,1);});
+  particles.forEach((p,i)=>{p.x+=p.dx; p.y+=p.dy; p.life--; ctx.fillStyle="cyan"; ctx.fillRect(p.x,p.y,4,4); if(p.life<=0) particles.splice(i,1);});
 
   // Blade
   ctx.beginPath();
   for(let i=0;i<trail.length-1;i++){ctx.moveTo(trail[i].x,trail[i].y); ctx.lineTo(trail[i+1].x,trail[i+1].y);}
-  ctx.strokeStyle="cyan"; ctx.lineWidth=6; ctx.stroke();
+  ctx.strokeStyle="lime"; ctx.lineWidth=6; ctx.stroke();
 
   // Score & lives
   document.getElementById("score").innerText="Score: "+score;
