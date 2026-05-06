@@ -18,8 +18,8 @@ body {
 .start-screen h1 {
   font-size: 60px;
   font-weight: bold;
-  color: #0ff; /* neon cyan */
-  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+  color: #0097a7;
+text-shadow: 0 0 5px #0097a7, 0 0 10px #0097a7;
   margin-bottom: 10px;
 }
 
